@@ -52,7 +52,8 @@ print("Olá seja bem vindo "+input("Olá, Qual o seu nome\n"))
 
 #______________________________________ Manipulando Strings função len ____________________________________________#
 
-#vcontando as letras incluindo os espaços da string a função len conta quantas letras tem em uma string exemplo:
+# contando as letras da string também os espaços presentes na string. 
+# a função len conta quantas letras tem em uma string exemplo:
 numeroDeCaracteres = len("welinton de sousa  ")
 print(numeroDeCaracteres)
 numeroDeCaracteres = len("welinton  ")

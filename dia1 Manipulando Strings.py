@@ -71,3 +71,8 @@ print(numeroDeLetras)
 # 4-imprime a quantidade de palavras na tela que e o resultado da função len
 print(len(input("escreva qualquer palavra ou fraze para saber quantas letras tem\n")))
 
+# tambem para nao confundir podemos separar este codigo acima em varias partes
+# este codigo tem o mesmo resultado que o codigo acima porem está fracionado
+palavra = input("escreva qualquer palavra ou fraze para saber quantas letras tem\n")
+tamanho = len(palavra)
+print(tamanho)

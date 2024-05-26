@@ -4,4 +4,4 @@ nomeCidade = input("Qual nome da sua cidade")
 # se quiser pode primeiro criar uma variavel concatenando as duas variáveis
 # nome_Banda = nomePet + " " + nomeCidade
 # print(f"um bom nome para sua banda é: {nome_Banda}")
-print("um bom nome para sua banda é: "+nomeCidade+" "+nomePet)
+print("um bom nome para sua banda é: ##"+nomeCidade+" "+nomePet+"##")

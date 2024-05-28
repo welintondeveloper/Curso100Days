@@ -68,8 +68,3 @@ primeiro_digito = int(entrada[0])
 segundo_digito = int(entrada[1])
 # somar e imprimir os dois caracteres convertidos em inteiro
 print(primeiro_digito + segundo_digito)
-
-
-
-
-

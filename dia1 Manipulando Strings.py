@@ -77,3 +77,11 @@ print(len(input("escreva qualquer palavra ou fraze para saber quantas letras tem
 palavra = input("escreva qualquer palavra ou fraze para saber quantas letras tem\n")
 tamanho = len(palavra)
 print(tamanho)
+
+numero = 123
+palavras = "f-string"
+VerdadeOuFalso = True # este True é booleano primeira letra maiúscula sempre
+# função f string usa um f antes das aspas depois acrescenta outros tipos com {}
+print (f"un numero {numero} uma frase \"{palavras}\" um booleano {VerdadeOuFalso}")
+# no caso acima para usar aspas dentro usamos uma barra invertida 
+# ou usamos aspas diferente das aspas usadas inicialmente poderia ser '' ou \\

@@ -45,4 +45,8 @@ print(type(OutroCalculo))
 # para poder imprimir em um único print
 # Ex:
 
-
+# apesar de estarmos convertendo os dados para int o valor deste calculo será um float 
+# porque estamos dividindo e sempre que dividimos em python o resultado é um float
+a = int("5") / int(2.7)
+print(type(a))
+print(a)

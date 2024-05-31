@@ -40,4 +40,4 @@ elif IndiceFormatado <= 35:
 # elif Imc < 35:
 #   print(f"Your BMI is {Imc}, you are obese.")
 # else:
-#   print(f"Your BMI is {Imc}, you are clinically obese.")
+#   print(f"Your BMI is {Imc}, you are clinically obese.") 

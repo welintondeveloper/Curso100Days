@@ -1,16 +1,16 @@
 # Meu programa
-year = int(input("Qual o ano quer verificar se ele foi/é/será bisexto ou não"))
+year = int(input("Qual o ano quer verificar se ele foi/é/será bissexto ou não"))
 
 if year % 4 == 0:
   if year % 100 == 0:
     if year % 400 == 0:
-      print("Ano bisexto")
+      print("Ano bissexto")
     else:
-      print("Ano não bisexto")
+      print("Ano não bissexto")
   else:
-    print("Ano bisexto")
+    print("Ano bissexto")
 else:
-  print("Ano não bisexto")
+  print("Ano não bissexto")
 
 # # Programa do Curso
 # year = int(input())

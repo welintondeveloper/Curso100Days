@@ -9,6 +9,7 @@ estacao = "verão2" # aqui temos um erro de propósito para a string não ser ig
 if estacao == "verão":
     if temperatura >= 30:
         # se a é verão e a temperatura e maior ou igual a 30 vamos imprimir este print
+        
         print("Está muito quente! É melhor vestir roupas leves e beber muita água.")
     else:
         # mais se for verão e a temperatura for abaixo de 30 vamos imprimir isto abaixo

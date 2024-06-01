@@ -6,6 +6,8 @@ if altura >= 120:
     if idade < 13:
         print("o valor é 5 reais")
         valorEntrada = 5
+# se a entrada de idade fosse 7 anos, e abaixo tivesse um outro if ao inves de elif 
+# não daria erro mais iria imprimir os dois valores 5 reis e 7 reais pois ele iria ser < 19 e < 13
     elif idade < 19:
         print("o valor é 7 reais")
         valorEntrada = 7

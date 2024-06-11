@@ -1,0 +1,2 @@
+import randomicos
+print(randomicos)

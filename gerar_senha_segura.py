@@ -75,10 +75,27 @@ def ler_senhas(chave):
         janela_senhas = tk.Toplevel()
         janela_senhas.title("Senhas Salvas")
 
+        canvas = tk.Canvas(janela_senhas)
+        scrollbar = tk.Scrollbar(janela_senhas, orient="vertical", command=canvas.yview)
+        scrollable_frame = tk.Frame(canvas)
+
+        scrollable_frame.bind(
+            "<Configure>",
+            lambda e: canvas.configure(
+                scrollregion=canvas.bbox("all")
+            )
+        )
+
+        canvas.create_window((0, 0), window=scrollable_frame, anchor="nw")
+        canvas.configure(yscrollcommand=scrollbar.set)
+
         for idx, (nome_app, senha) in enumerate(senhas):
-            tk.Label(janela_senhas, text=f"Aplicativo: {nome_app}").grid(row=idx, column=0, padx=10, pady=5)
-            tk.Entry(janela_senhas, width=30, state='readonly').grid(row=idx, column=1, padx=10, pady=5)
-            tk.Button(janela_senhas, text="Copiar", command=lambda s=senha: copiar_para_area_transferencia(s)).grid(row=idx, column=2, padx=10, pady=5)
+            tk.Label(scrollable_frame, text=f"Aplicativo: {nome_app}").grid(row=idx, column=0, padx=10, pady=5)
+            tk.Entry(scrollable_frame, width=30, state='readonly').grid(row=idx, column=1, padx=10, pady=5)
+            tk.Button(scrollable_frame, text="Copiar", command=lambda s=senha: copiar_para_area_transferencia(s)).grid(row=idx, column=2, padx=10, pady=5)
+
+        canvas.pack(side="left", fill="both", expand=True)
+        scrollbar.pack(side="right", fill="y")
 
     except FileNotFoundError:
         messagebox.showinfo("Senhas Salvas", "Nenhuma senha salva ainda.")
